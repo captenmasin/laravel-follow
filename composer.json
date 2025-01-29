@@ -34,7 +34,7 @@
         "composer test"
       ],
       "pre-push": [
-        "composer test",
+        "composer test"
       ]
     }
   },
