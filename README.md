@@ -1,48 +1,28 @@
 <h1 align="center">Laravel Follow</h1>
 
-<p align="center">User follow unfollow system for Laravel.</p>
-
-<p align="center">
-<a href="https://packagist.org/packages/overtrue/laravel-follow"><img src="https://poser.pugx.org/overtrue/laravel-follow/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/overtrue/laravel-follow"><img src="https://poser.pugx.org/overtrue/laravel-follow/v/unstable.svg" alt="Latest Unstable Version"></a>
-<a href="https://scrutinizer-ci.com/g/overtrue/laravel-follow/build-status/master"><img src="https://scrutinizer-ci.com/g/overtrue/laravel-follow/badges/build.png?b=master" alt="Build Status"></a>
-<a href="https://scrutinizer-ci.com/g/overtrue/laravel-follow/?branch=master"><img src="https://scrutinizer-ci.com/g/overtrue/laravel-follow/badges/quality-score.png?b=master" alt="Scrutinizer Code Quality"></a>
-<a href="https://packagist.org/packages/overtrue/laravel-follow"><img src="https://poser.pugx.org/overtrue/laravel-follow/downloads" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/overtrue/laravel-follow"><img src="https://poser.pugx.org/overtrue/laravel-follow/license" alt="License"></a>
-</p>
-
-Related projects:
-
-- Like: [overtrue/laravel-like](https://github.com/overtrue/laravel-like)
-- Favorite: [overtrue/laravel-favorite](https://github.com/overtrue/laravel-favorite)
-- Subscribe: [overtrue/laravel-subscribe](https://github.com/overtrue/laravel-subscribe)
-- Vote: [overtrue/laravel-vote](https://github.com/overtrue/laravel-vote)
-
-[![Sponsor me](https://github.com/overtrue/overtrue/blob/master/sponsor-me-button-s.svg?raw=true)](https://github.com/sponsors/overtrue)
-
 ## Installing
 
 ```shell
-composer require overtrue/laravel-follow -vvv
+composer require captenmasin/laravel-follow -vvv
 ```
 
 ### Configuration and Migrations
 
 ```shell
-php artisan vendor:publish --provider="Overtrue\LaravelFollow\FollowServiceProvider"
+php artisan vendor:publish --provider="Captenmasin\LaravelFollow\FollowServiceProvider"
 ```
 
 ## Usage
 
 ### Traits
 
-#### `Overtrue\LaravelFollow\Traits\Follower`
+#### `Captenmasin\LaravelFollow\Traits\Follower`
 
 Add the Follower trait to your user model:
 
 ```php
 
-use Overtrue\LaravelFollow\Traits\Follower;
+use Captenmasin\LaravelFollow\Traits\Follower;
 
 class User extends Authenticatable
 {
@@ -52,12 +32,12 @@ class User extends Authenticatable
 }
 ```
 
-#### `Overtrue\LaravelFollow\Traits\Followable`
+#### `Captenmasin\LaravelFollow\Traits\Followable`
 
 Then add the Followable trait to your followable model, for example `App\User`:
 
 ```php
-use Overtrue\LaravelFollow\Traits\Followable;
+use Captenmasin\LaravelFollow\Traits\Followable;
 
 class User extends Authenticatable
 {
@@ -69,7 +49,7 @@ class User extends Authenticatable
 or any other model:
 
 ```php
-use Overtrue\LaravelFollow\Traits\Followable;
+use Captenmasin\LaravelFollow\Traits\Followable;
 
 class Channel extends Model
 {
@@ -292,28 +272,28 @@ foreach($users as $user) {
 
 | **Event**                                 | **Description**                             |
 | ----------------------------------------- | ------------------------------------------- |
-| `Overtrue\LaravelFollow\Events\Followed`   | Triggered when the relationship is created. |
-| `Overtrue\LaravelFollow\Events\Unfollowed` | Triggered when the relationship is deleted. |
+| `Captenmasin\LaravelFollow\Events\Followed`   | Triggered when the relationship is created. |
+| `Captenmasin\LaravelFollow\Events\Unfollowed` | Triggered when the relationship is deleted. |
 
 ## :heart: Sponsor me 
 
-[![Sponsor me](https://github.com/overtrue/overtrue/blob/master/sponsor-me.svg?raw=true)](https://github.com/sponsors/overtrue)
+[![Sponsor me](https://github.com/captenmasin/captenmasin/blob/master/sponsor-me.svg?raw=true)](https://github.com/sponsors/captenmasin)
 
-如果你喜欢我的项目并想支持它，[点击这里 :heart:](https://github.com/sponsors/overtrue)
+如果你喜欢我的项目并想支持它，[点击这里 :heart:](https://github.com/sponsors/captenmasin)
 
 ## Project supported by JetBrains
 
 Many thanks to Jetbrains for kindly providing a license for me to work on this and other open-source projects.
 
-[![](https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.svg)](https://www.jetbrains.com/?from=https://github.com/overtrue)
+[![](https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.svg)](https://www.jetbrains.com/?from=https://github.com/captenmasin)
 
 
 ## Contributing
 
 You can contribute in one of three ways:
 
-1. File bug reports using the [issue tracker](https://github.com/overtrue/laravel-follow/issues).
-2. Answer questions or fix bugs on the [issue tracker](https://github.com/overtrue/laravel-follow/issues).
+1. File bug reports using the [issue tracker](https://github.com/captenmasin/laravel-follow/issues).
+2. Answer questions or fix bugs on the [issue tracker](https://github.com/captenmasin/laravel-follow/issues).
 3. Contribute new features or update the wiki.
 
 _The code contribution process is not very formal. You just need to make sure that you follow the PSR-0, PSR-1, and PSR-2 coding guidelines. Any new code contributions must be accompanied by unit tests where applicable._

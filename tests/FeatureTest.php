@@ -4,8 +4,8 @@ namespace Tests;
 
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Event;
-use Overtrue\LaravelFollow\Events\Followed;
-use Overtrue\LaravelFollow\Events\Unfollowed;
+use Captenmasin\LaravelFollow\Events\Followed;
+use Captenmasin\LaravelFollow\Events\Unfollowed;
 
 class FeatureTest extends TestCase
 {

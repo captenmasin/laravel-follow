@@ -1,6 +1,6 @@
 <?php
 
-namespace Overtrue\LaravelFollow;
+namespace Captenmasin\LaravelFollow;
 
 use Illuminate\Support\ServiceProvider;
 

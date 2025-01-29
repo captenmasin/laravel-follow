@@ -1,6 +1,6 @@
 <?php
 
-namespace Overtrue\LaravelFollow;
+namespace Captenmasin\LaravelFollow;
 
 use function config;
 use Illuminate\Database\Eloquent\Builder;
@@ -9,8 +9,8 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Support\Str;
-use Overtrue\LaravelFollow\Events\Followed;
-use Overtrue\LaravelFollow\Events\Unfollowed;
+use Captenmasin\LaravelFollow\Events\Followed;
+use Captenmasin\LaravelFollow\Events\Unfollowed;
 
 /**
  * @property int|string $followable_id;

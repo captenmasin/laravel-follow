@@ -1,13 +1,13 @@
 <?php
 
-namespace Overtrue\LaravelFollow\Traits;
+namespace Captenmasin\LaravelFollow\Traits;
 
 use function config;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use Overtrue\LaravelFollow\Traits\Follower as Follower;
+use Captenmasin\LaravelFollow\Traits\Follower as Follower;
 
 /**
  * @property Collection $followables
@@ -72,7 +72,7 @@ trait Followable
          * @var Model $this
          */
         return $this->hasMany(
-            config('follow.followables_model', \Overtrue\LaravelFollow\Followable::class),
+            config('follow.followables_model', \Captenmasin\LaravelFollow\Followable::class),
             'followable_id',
         )->where('followable_type', $this->getMorphClass());
     }

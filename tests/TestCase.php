@@ -2,7 +2,7 @@
 
 namespace Tests;
 
-use Overtrue\LaravelFollow\FollowServiceProvider;
+use Captenmasin\LaravelFollow\FollowServiceProvider;
 
 abstract class TestCase extends \Orchestra\Testbench\TestCase
 {

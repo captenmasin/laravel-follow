@@ -1,6 +1,6 @@
 <?php
 
-namespace Overtrue\LaravelFollow\Events;
+namespace Captenmasin\LaravelFollow\Events;
 
 class Followed extends Event
 {

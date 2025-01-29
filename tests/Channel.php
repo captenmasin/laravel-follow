@@ -3,7 +3,7 @@
 namespace Tests;
 
 use Illuminate\Database\Eloquent\Model;
-use Overtrue\LaravelFollow\Traits\Followable;
+use Captenmasin\LaravelFollow\Traits\Followable;
 
 class Channel extends Model
 {

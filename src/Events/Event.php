@@ -1,8 +1,8 @@
 <?php
 
-namespace Overtrue\LaravelFollow\Events;
+namespace Captenmasin\LaravelFollow\Events;
 
-use Overtrue\LaravelFollow\Followable;
+use Captenmasin\LaravelFollow\Followable;
 
 class Event
 {

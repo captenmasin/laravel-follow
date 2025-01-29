@@ -19,5 +19,5 @@ return [
     /**
      * Model class name for followers table.
      */
-    'followables_model' => \Overtrue\LaravelFollow\Followable::class,
+    'followables_model' => \Captenmasin\LaravelFollow\Followable::class,
 ];

@@ -1,6 +1,6 @@
 <?php
 
-namespace Overtrue\LaravelFollow\Traits;
+namespace Captenmasin\LaravelFollow\Traits;
 
 use function abort_if;
 use function class_uses;
@@ -35,7 +35,7 @@ trait Follower
             throw new InvalidArgumentException('The followable model must use the Followable trait.');
         }
 
-        /** @var \Illuminate\Database\Eloquent\Model|\Overtrue\LaravelFollow\Traits\Followable $followable */
+        /** @var \Illuminate\Database\Eloquent\Model|\Captenmasin\LaravelFollow\Traits\Followable $followable */
         $isPending = $followable->needsToApproveFollowRequests() ?: false;
 
         $this->followings()->updateOrCreate([
@@ -81,7 +81,7 @@ trait Follower
 
     public function hasRequestedToFollow(Model $followable): bool
     {
-        if (! in_array(\Overtrue\LaravelFollow\Traits\Followable::class, \class_uses($followable))) {
+        if (! in_array(\Captenmasin\LaravelFollow\Traits\Followable::class, \class_uses($followable))) {
             throw new InvalidArgumentException('The followable model must use the Followable trait.');
         }
 
@@ -101,7 +101,7 @@ trait Follower
          * @var Model $this
          */
         return $this->hasMany(
-            config('follow.followables_model', \Overtrue\LaravelFollow\Followable::class),
+            config('follow.followables_model', \Captenmasin\LaravelFollow\Followable::class),
             config('follow.user_foreign_key', 'user_id'),
             $this->getKeyName()
         );
