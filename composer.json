@@ -42,6 +42,6 @@
     "test": "phpunit --colors=always"
   },
   "scripts-descriptions": {
-    "test": "Run all tests.",
+    "test": "Run all tests."
   }
 }
