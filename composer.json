@@ -2,12 +2,6 @@
   "name": "captenmasin/laravel-follow",
   "description": "User follow unfollow system for Laravel.",
   "license": "MIT",
-  "authors": [
-    {
-      "name": "captenmasin",
-      "email": "anzhengchao@gmail.com"
-    }
-  ],
   "require": {
     "laravel/framework": "^9.0|^10.0|^11.0"
   },
