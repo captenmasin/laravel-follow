@@ -3,7 +3,7 @@
   "description": "User follow unfollow system for Laravel.",
   "license": "MIT",
   "require": {
-    "laravel/framework": "^9.0|^10.0|^11.0"
+    "laravel/framework": "^9.0|^10.0|^11.0|^12.0"
   },
   "autoload": {
     "psr-4": {
